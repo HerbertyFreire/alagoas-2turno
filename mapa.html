@@ -102,6 +102,28 @@ footer a{color:var(--ink)}
   .toolbar{position:static}
 }
 
+
+.pscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.tage td span{display:block;font-size:.68rem;line-height:1.1}.tage th,.tage td{padding:5px 4px}
+.agebox{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;box-shadow:0 1px 2px rgba(15,30,51,.04),0 4px 16px rgba(15,30,51,.04)}
+.agehead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
+.agehead b{font:800 1.15rem 'Inter Tight',Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif}
+.pyr{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);gap:6px 10px;align-items:center;font-variant-numeric:tabular-nums}
+.pyr .hd{font:700 .72rem Inter,system-ui,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.pyr .hd.l{text-align:right;color:var(--lula)} .pyr .hd.f{color:var(--flavio)}
+.pyr .lab{text-align:center;font-weight:800}
+.pyr .lab.y{color:var(--young)}
+.pyr .side{display:flex;align-items:center;gap:8px;min-width:0}
+.pyr .side.l{justify-content:flex-end}
+.pyr .b{height:24px;border-radius:4px;min-width:2px}
+.pyr .side.l .b{background:var(--lula)} .pyr .side.f .b{background:var(--flavio)}
+.pyr .n{font-weight:700;font-size:.86rem;white-space:nowrap}
+.pyr .n span{font-weight:500;color:var(--mute);font-size:.76rem}
+@media (max-width:560px){.pyr .n span{display:none}}
+
+.mhead{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.pdfbtn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#fff;text-decoration:none;font:700 .9rem Inter,system-ui,sans-serif;padding:11px 16px;border-radius:8px}
+.pdfbtn:hover{opacity:.92}
+.sub3{font-size:1.05rem;margin:8px 0 6px}
 /* ===== acabamento profissional ===== */
 :root{--gold:#B8932E;--gold-l:#F6F1E4;--ink:#0F1E33;--ink2:#4A5568;--mute:#718096;--line:#E2E6EC;--bg2:#F6F8FB;
  --lula:#C8102E;--lula-l:#FBE7EA;--flavio:#1B4E9B;--flavio-l:#E6EEF8;--young:#6B2FA8;--young-l:#F2EBFA}
@@ -110,7 +132,7 @@ h1,h2,h3{font-family:'Inter Tight',Inter,system-ui,-apple-system,'Segoe UI',Robo
 h1{font-weight:800}
 .masthead{background:var(--ink);color:#CBD5E1;font-size:.78rem}
 .masthead .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
-.masthead b{color:#fff}.masthead a{color:#fff;text-decoration:underline;text-underline-offset:2px;margin-left:10px}
+.masthead b{color:#fff}.masthead a{color:#fff;text-decoration:underline;text-underline-offset:2px;margin-left:10px}.masthead a.mlink{color:#fff;text-decoration:underline;text-underline-offset:2px;margin-left:10px}
 header{background:linear-gradient(180deg,#F6F8FB,#fff);border-bottom:1px solid var(--line);padding:26px 0 20px}
 .kicker{background:none;color:var(--gold);padding:0 0 0 10px;border-left:3px solid var(--gold);border-radius:0;letter-spacing:.14em}
 .hgrid{display:grid;grid-template-columns:1.15fr 1fr;gap:28px;align-items:center}
@@ -142,7 +164,7 @@ footer a,footer b{color:#fff}
 </style>
 </head>
 <body>
-<div class="masthead"><div class="wrap"><span><b>Mapa eleitoral</b> · Alagoas · Eleição presidencial 2026</span><span>1º turno: 4/out/2026 · 100% das seções apuradas · Fonte: TSE<a href="/">Análise do 2º turno →</a></span></div></div>
+<div class="masthead"><div class="wrap"><span><b>Mapa eleitoral</b> · Alagoas · Eleição presidencial 2026</span><span>1º turno: 4/out/2026 · 100% das seções apuradas · Fonte: TSE<a class="mlink" href="#maceio">Material de Maceió</a></span></div></div>
 <header><div class="wrap">
   <div class="hgrid">
     <div>
@@ -186,6 +208,24 @@ footer a,footer b{color:#fff}
     <div class="tscroll"><table class="tbl" id="rank"><thead><tr>
       <th data-k="z">Zona</th><th data-k="munsTxt">Municípios</th><th data-k="ap">Eleitores</th><th data-k="abstp">Abstenção</th><th data-k="lp">Lula</th><th data-k="fp">Flávio</th><th data-k="marg">Saldo</th><th data-k="split">Lula × Flávio</th><th data-k="y">Jovens 16–24</th><th data-k="ya">Jovens ausentes (est.)</th><th data-k="gy">Saldo c/ jovens</th>
     </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="maceio">
+    <div class="mhead">
+      <div><h2>Maceió: material para imprimir</h2>
+      <p class="mute small" style="margin:-2px 0 0;max-width:760px">Resultado oficial por zona e por bairro da capital e a estimativa de voto por faixa etária, em 4 páginas A4.</p></div>
+      <a class="pdfbtn" href="https://alagoas-2turno.vercel.app/maceio-material.pdf" target="_blank" rel="noopener">Abrir o PDF para imprimir</a>
+    </div>
+    <h3 class="sub3">Bairros de Maceió</h3>
+    <p class="mute small" style="margin:-2px 0 8px">Votos reais somados pelos locais de votação de cada bairro. O bairro é o da escola onde a pessoa vota. Clique numa linha para ver o bairro no mapa.</p>
+    <div class="tscroll"><table class="tbl" id="bairros"><thead><tr>
+      <th data-k="nome">Bairro</th><th data-k="zt">Zona</th><th data-k="ap">Eleitores</th><th data-k="abstp">Abstenção</th><th data-k="l">Lula</th><th data-k="f">Flávio</th><th data-k="marg">Saldo</th><th data-k="lp">% Lula</th><th data-k="y">Jovens 16–24</th><th data-k="ya">Jovens ausentes (est.)</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+  <section id="idade">
+    <h2>Quem votou em quem, por faixa etária</h2>
+    <p class="mute small" style="margin-top:-4px;max-width:900px">O voto é secreto, então o TSE não divulga votos por idade. Os números abaixo são uma <b>estimativa</b>: partem do resultado real de cada urna e do número real de eleitores de cada idade (TSE) e distribuem os votos pela diferença entre faixas medida na pesquisa BTG/Nexus (ago/2026). Os totais batem com o resultado oficial. Mostra o estado ou a zona/município/local escolhido no mapa.</p>
+    <div class="agebox"><div class="agehead"><b id="ageTitle">Alagoas</b><span class="mute small" id="ageSub"></span></div><div id="agePyr"></div></div>
   </section>
 </div>
 
@@ -236,6 +276,7 @@ function model(e){
   const A=raw.map((v,i)=>Math.min(E[i]*0.95,v*s)); const V=E.map((v,i)=>v-A[i]);
   const L=LEANK.map(kk=>LEAN[kk]/100); const Vt=V.reduce((a,b)=>a+b,0); const c=V.reduce((a,v,i)=>a+v*L[i],0)/Vt;
   const p=L.map(l=>clamp(e.two+l-c,0.03,0.97));
+  const k=(e.l+e.f)/e.c; let VL=V.map((v,i)=>v*k*p[i]), VF=V.map((v,i)=>v*k*(1-p[i])); const sl=e.l/VL.reduce((a,b)=>a+b,0), sf=e.f/VF.reduce((a,b)=>a+b,0); e.VL=VL.map(x=>x*sl); e.VF=VF.map(x=>x*sf);
   e.E=E;e.A=A;e.V=V;e.p=p; e.ya=A[0]+A[1]; e.yr=(A[0]+A[1])/(E[0]+E[1]); e.sy=(A[0]*p[0]+A[1]*p[1])/e.ya;
 }
 Object.values(ZONES).forEach(model); Object.values(MUNS).forEach(model);
@@ -348,9 +389,10 @@ function youthBox(e,label){const per=VR*(2*e.sy-1);
   if(e.marg<0){const need=per>0?-e.marg/per:Infinity;
     return `<div class="callout"><b>Para virar ${label}</b> só com jovens: ${per>0?`<b>${fmt(need)}</b> jovens que faltaram precisariam votar (há ~${fmt(e.ya)}). ${need>e.ya?'Não basta sozinho: junte terceira via e conversas com eleitores de Flávio.':`São ${pct(need/e.ya,0)} deles.`}`:'com o voto jovem estimado aqui, só conversa individual resolve.'}</div>`;}
   return `<div class="callout">Levando <b>${pct(MOB,0)}</b> dos jovens que faltaram (${fmt(e.ya*MOB)} pessoas), ${label} soma <b>${fmtS(e.gy)}</b> votos de saldo para Lula. Estimativa: ${pct(e.sy,0)} desses jovens votam Lula.</div>`;}
-function ageTable(e){return `<div class="sect">Todas as idades</div><table class="tbl"><thead><tr><th>Idade</th><th>Eleitores</th><th>Faltaram*</th><th>Lula*</th><th>Flávio*</th></tr></thead><tbody>
- ${AGES.map((a,i)=>`<tr class="${i<2?'y':''}"><td><b>${a}</b></td><td>${fmt(e.E[i])}</td><td>${fmt(e.A[i])}</td><td class="lula">${pct(e.p[i],0)}</td><td class="flavio">${pct(1-e.p[i],0)}</td></tr>`).join('')}</tbody></table>
- <div class="small mute" style="margin-top:4px">Eleitores por idade: TSE. *Estimativa (ver rodapé).</div>`;}
+function ageTable(e){return `<div class="sect">Quem votou em quem, por idade*</div><div class="pscroll"><table class="tbl tage"><thead><tr><th>Idade</th><th>Eleitores</th><th>Votos Lula*</th><th>Votos Flávio*</th></tr></thead><tbody>
+ ${AGES.map((a,i)=>`<tr class="${i<2?'y':''}"><td><b>${a}</b></td><td>${fmt(e.E[i])}</td><td class="lula"><b>${fmt(e.VL[i])}</b> <span class="mute">${pct(e.p[i],0)}</span></td><td class="flavio"><b>${fmt(e.VF[i])}</b> <span class="mute">${pct(1-e.p[i],0)}</span></td></tr>`).join('')}
+ <tr><td><b>Total</b></td><td>${fmt(e.ap)}</td><td class="lula"><b>${fmt(e.l)}</b></td><td class="flavio"><b>${fmt(e.f)}</b></td></tr></tbody></table></div>
+ <div class="small mute" style="margin-top:4px">Eleitores por idade e totais: TSE. *O voto é secreto: a divisão por idade é estimativa (ver “Voto por idade” abaixo do mapa).</div>`;}
 function locTable(list,title){const top=list.slice().sort((a,b)=>b.ya-a.ya).slice(0,10);
   return `<div class="sect">${title}</div><table class="tbl"><thead><tr><th>Local</th><th>Jovens faltaram*</th><th>Saldo</th></tr></thead><tbody>
   ${top.map(x=>`<tr class="click" data-loc="${x.i}"><td class="wrapc"><b>${x.nm}</b><br><span class="mute">${x.ba||''}${x.ba?' · ':''}${MNAME[x.mun]}</span></td><td class="young"><b>${fmt(x.ya)}</b></td><td class="${x.marg>=0?'lula':'flavio'}">${fmtS(x.marg)}</td></tr>`).join('')}</tbody></table>`;}
@@ -417,7 +459,32 @@ function rank(){const rows=Object.values(ZONES).slice().sort((a,b)=>{const x=a[s
 document.querySelectorAll('#rank th').forEach(th=>th.onclick=()=>{const kk=th.dataset.k;if(sk===kk)sd*=-1;else{sk=kk;sd=(kk==='z'||kk==='munsTxt')?1:-1}rank()});
 document.querySelector('#rank tbody').onclick=e=>{const tr=e.target.closest('tr');if(tr){setView('zona');selectZone(+tr.dataset.z,true);el('map').scrollIntoView({behavior:'smooth',block:'center'})}};
 
-drawFills(); sizeLocs(); labels(); emptyPanel(); rank();
+
+// ---- pirâmide de voto por idade ----
+const STATE={ages:[0,0,0,0,0,0,0],...agg(LOCS)}; Object.values(ZONES).forEach(z=>z.ages.forEach((v,i)=>STATE.ages[i]+=v)); finish2(STATE); model(STATE);
+function finish2(e){e.abst=e.ap-e.c;e.abstp=e.abst/e.ap;e.val=e.l+e.f+e.o;e.two=e.l/(e.l+e.f);}
+function locAge(x){const z=ZONES[x.z]; const e={...x,ages:z.ages.slice()}; finish2(e); if(!e.c||!(e.l+e.f)) return null; model(e); return e;}
+function pyr(){let e=STATE,title='Alagoas',sub='todo o estado';
+  if(SEL&&SEL.t==='zona'){e=ZONES[SEL.id];title=SEL.id+'ª Zona';sub=e.munsTxt}
+  else if(SEL&&SEL.t==='mun'){e=MUNS[SEL.id];title=e.name;sub='município'}
+  else if(SEL&&SEL.t==='loc'){const x=LOCS[SEL.id];const le=locAge(x);if(le){e=le;title=x.nm;sub='local de votação · perfil etário da zona'}}
+  el('ageTitle').textContent=title; el('ageSub').textContent=sub+' · Lula '+fmt(e.l)+' × Flávio '+fmt(e.f);
+  const mx=Math.max(...e.VL,...e.VF);
+  el('agePyr').innerHTML='<div class="pyr"><div class="hd l">Votos em Lula (est.)</div><div class="hd" style="text-align:center">Idade</div><div class="hd f">Votos em Flávio (est.)</div>'+
+   AGES.map((a,i)=>`<div class="side l"><span class="n">${fmt(e.VL[i])} <span>${pct(e.p[i],0)}</span></span><div class="b" style="width:${e.VL[i]/mx*72}%"></div></div><div class="lab ${i<2?'y':''}">${a}</div><div class="side f"><div class="b" style="width:${e.VF[i]/mx*72}%"></div><span class="n">${fmt(e.VF[i])} <span>${pct(1-e.p[i],0)}</span></span></div>`).join('')+'</div>';}
+const _markSel=markSel; markSel=function(){_markSel(); pyr();};
+
+// ---- bairros de Maceió ----
+const MACEIO='2704302'; const BA={};
+LOCS.filter(x=>x.mun===MACEIO).forEach(x=>{const k=x.ba||'(sem bairro)';const b=BA[k]=BA[k]||{nome:k,locs:[],zs:new Set()};b.locs.push(x);b.zs.add(x.z);});
+const BAIRROS=Object.values(BA).map(b=>{const a=agg(b.locs);const o={...a,nome:b.nome,locs:b.locs,zs:[...b.zs].sort((p,q)=>p-q)};o.zt=o.zs.join(', ');o.abstp=(o.ap-o.c)/o.ap;o.val=o.l+o.f+o.o;o.lp=o.val?o.l/o.val:0;o.marg=o.l-o.f;o.ya=b.locs.reduce((s,x)=>s+x.ya,0);return o;});
+let bk='ap',bd=-1;
+function renderBairros(){const rows=BAIRROS.slice().sort((a,b)=>{const x=a[bk],y=b[bk];return(typeof x==='string'?x.localeCompare(y,'pt'):x-y)*bd});
+ document.querySelector('#bairros tbody').innerHTML=rows.map((r,i)=>`<tr class="click" data-b="${BAIRROS.indexOf(r)}"><td><b>${r.nome}</b></td><td>${r.zs.map(z=>z+'ª').join(', ')}</td><td>${fmt(r.ap)}</td><td>${pct(r.abstp)}</td><td class="lula">${fmt(r.l)}</td><td class="flavio">${fmt(r.f)}</td><td class="${r.marg>=0?'lula':'flavio'}"><b>${fmtS(r.marg)}</b></td><td>${pct(r.lp,0)}</td><td>${fmt(r.y)}</td><td class="young"><b>${fmt(r.ya)}</b></td></tr>`).join('');}
+document.querySelectorAll('#bairros th').forEach(th=>th.onclick=()=>{const kk=th.dataset.k;if(bk===kk)bd*=-1;else{bk=kk;bd=(kk==="nome"||kk==="zt")?1:-1}renderBairros()});
+document.querySelector('#bairros tbody').onclick=e=>{const tr=e.target.closest('tr');if(!tr)return;const b=BAIRROS[+tr.dataset.b];const big=b.locs.slice().sort((p,q)=>q.ap-p.ap)[0];selectLoc(big.i);el('map').scrollIntoView({behavior:'smooth',block:'center'});};
+renderBairros();
+drawFills(); sizeLocs(); labels(); emptyPanel(); rank(); pyr();
 window.addEventListener('resize',labels);
 </script>
 </body>
